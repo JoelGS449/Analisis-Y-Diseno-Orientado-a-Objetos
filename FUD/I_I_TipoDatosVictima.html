@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos victima</title>
+    <link rel="stylesheet" href="../FUD/estilos/style_I_I_TipoDatosVictima.css">
+</head>
+<body>
+    <header>
+        <div class="gob">
+            gob.mx
+        </div>
+        <div class="FUD">
+            Comisión ejecutiva de atención a víctimas <br>
+            Formato Único de Declaración
+        </div>
+        <p>
+        El presente Formato Único de Declaración es el medio para tramitar el ingreso de las personas en situación de víctima al Registro Nacional de Víctimas. La información contenida en el presente FUD incluye datos personales sensibles por lo que éstos serán tratados como confidenciales de conformidad con lo dispuesto en la normatividad aplicable. La tramitación del FUD es totalmente gratuita.
+        </p>    
+    </header>
+
+    <div class="title">
+        I.I DATOS DEL/LA SOLICITANTE
+    </div>
+
+    <form action="POST" class="box">
+        <div class="style">
+            <div class="divVictima">
+                Directa
+                <input type="radio" name="datosVictima" id="victimaDirecta">
+                Indirecta
+                <input type="radio" name="datosVictima" id="victiaIndirecta">
+                Potencial
+                <input type="radio" name="datosVictima" id="victimaPotencial">
+            </div>
+            Nombre (s)
+            <input type="text" class="datoTabla" id="nombreVict">
+            Primer apellido
+            <input type="text" class="datoTabla" id="primApellidoVict">
+            Segundo apellido
+            <input type="text" id="segApellidoVict">
+            Fecha de nacimiento
+            <input type="date" class="datoTabla" id="fechaVictima">
+            Sexo <br>
+            <div class="divSexo">
+                Hombre
+                <input type="radio" name="sexo2" id="sexHombre">
+                Mujer
+                <input type="radio" name="sexo2" id="sexMujer">
+                Otro
+                <input type="radio" name="sexo2" id="sexOtro">
+            </div>
+            Lugar de nacimiento
+            <input type="text" placeholder="a)País" class="datoTabla" name="lugarNacimiento" id="lugarPais">
+        
+            <input type="text" placeholder="b)Entidad federativa" class="datoTabla" name="lugarNacimiento" id="lugarEntidad">
+        
+            <input type="text" placeholder="c)Delegacion o municipio" class="datoTabla" name="lugarNacimiento" id="lugarDelegacion">
+        
+            <input type="text" placeholder="d)Poblacion o comunidad" class="datoTabla" name="lugarNacimiento" id="lugarPoblacion">
+            Estado Civil <br>
+            <div class="divEdoCivil">
+               <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="EdoSoltero">
+                     </td>
+                     <td>
+                        Soltero/A
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="EdoCasado">
+                    </td>
+                    <td>
+                    Casado/a 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="Edodivorciado">
+                    </td>
+                    <td>
+                        Divorciado/a
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    <input type="radio" name="edoCivil" id="EdoViudo">
+                    </td>
+                    <td>
+                        Viudo/a
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="EdoLibre">
+                    </td>
+                    <td>
+                        Union libre
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="EdoConcubinato">
+                    </td>
+                    <td>
+                        Concubinato
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="EdoSeparado">
+                    </td>
+                    <td>
+                        Separado/a
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edoCivil" id="EdoOtro">
+                    </td>
+                    <td>
+                        
+                    <input type="text">
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <br>
+            Calle
+            <input type="text" class="datoTabla" id="calle">
+            Número exterior    
+            <input type="text" class="datoTabla" id="noExterior">
+            Número interior
+            <input type="text" class="datoTabla" id="noInterior">
+            Código postal
+            <input type="text" class="datoTabla" id="CP">
+            Colonia</td>
+            <input type="text" class="datoTabla" id="Colonia">
+            Localidad    
+            <input type="text" class="datoTabla" id="Localidad">
+            Delegacion o municipio
+            <input type="text" id="DeleMun">
+            Entidad federativa
+            <input type="text" class="datoTabla" id="entFederativa">
+            Télefono
+            <input type="tel" class="datoTabla" id="tel">
+                
+            <div class="notas">NOTA: En caso de requerir que las notificaciones relacionadas con el presente Formato se
+                    realicen en un domicilio distinto al anteriormente señalado, o medio diverso al correo certificado,
+                    favor de proporcionar los datos mediante el formato (“INFORMACIÓN COMPLEMENTARIA”) </div>
+            <div class="notas">También puede acudir a las delegaciones de la CEAV, establecidas a lo largo del territorio
+                nacional.</div>
+        </div>
+    </form>
+
+    <div class="divBoton">
+        <table class="tabSig">
+            <tr>
+                <td>
+                    <form action="Indice.html">
+                         <button class="botones">Anterior</button>
+                    </form>
+                 </td>
+                <td>
+                <form action="p2.html">
+                     <button class="botones">Siguiente</button>
+                 </form>
+                </td>
+            </tr>
+    </table>
+    </div>
+
+    <div class="footer">
+        <table class="tableFooter">
+            <tr>
+                <td>
+                    <img src="../imagenes/gobiernoMexico.png">
+                </td>
+                <td>
+                    <img src="../imagenes/ceav.png">
+                </td>
+                <td>
+                    <img src="../imagenes/cofemer.png">
+                </td>
+            
+                <td>
+                    Contacto: <br>
+                    Angel Urraza N° 1137 <br>
+                    Col. Del Valle, Benito Juárez, Ciudad de México, C.P. 03100. <br>
+                    Tels. (55) 1000-2000 y 018000-842-8462
+                </td>
+            </tr>
+        </table>
+      </div>
+      
+</body>
+</html>

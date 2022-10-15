@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../FUD/estilos/p3_II.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="gob">
+            gob.mx
+        </div>
+        <div class="FUD">
+            Comisión ejecutiva de atención a víctimas <br>
+            Formato Único de Declaración
+        </div>
+        <p>
+        El presente Formato Único de Declaración es el medio para tramitar el ingreso de las personas en situación de víctima al Registro Nacional de Víctimas. La información contenida en el presente FUD incluye datos personales sensibles por lo que éstos serán tratados como confidenciales de conformidad con lo dispuesto en la normatividad aplicable. La tramitación del FUD es totalmente gratuita.
+        </p>    
+    </header>
+
+    <div class="title">
+        VII. Autoridades que han conocido de los hechos                 
+    </div>
+
+    <div class="box">
+        <div class="style">
+        <div class="autoridadesConocedoras">
+            <table class="datos1">
+                <tr>
+                    <td colspan="5">
+                        Investigación ministerial 
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td colspan="3">
+                        ¿Denuncio ante el ministerio Publico?
+                        <div class="divInputs">
+                            <input type="radio" name="Denuncio" id="denunciasteSi">SI
+                            <input type="radio" name="Denuncio" id="denunciasteNo">NO
+                        </div>
+                    </td>
+    
+                     <td class="datoSolicitado" colspan="2"> 
+                        Fecha:<input type="date" name="fecha"  placeholder="DD/MM/AAAA" class="datoTabla" id="fechaDenuncia">   
+                    </td>
+                </tr>
+    
+                <tr>
+                     <td colspan="2">
+                        <div class="divInputs">
+                            Competencia:
+                            <input type="radio" name="compe" id="federal">Federal
+                            <input type="radio" name="compe" id="local">Local
+                        </div>
+                     </td>
+                     <td class="datoSolicitado" colspan="3">    
+                        Entidad federativa: 
+                        <input type="text"  class="datoTabla" name="entidadFederativa" id="entFedDenuncia">      
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="5">
+                        Delito:<input type="text"  class="datoTabla" name="delitoDenuncia" id="delitoDen">  
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="datoSolicitado" colspan="2"> 
+                        Agencia MP 
+                        <input type="text" name="agencia" class="datoTabla" id="agenciaMP">   
+                    </td>
+                    <td class="datoSolicitado" colspan="3">
+                        A.P./C.I./A.C.**
+                        <input type="text" class="datoTabla" name="agencia" id="ap_ci_ac">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="datoSolicitado" colspan="5">
+                        Estado de la investigacion
+                        <input type="text" class="datoTabla" name="estadoInvestigacion" id="edoInvestigacion">
+                    </td>
+                </tr>
+            </table>
+            <p>*MP = Ministerio Público. **A. P. = Averiguación previa; C. I.= Carpeta de
+                investigación, y A. C. = Acta circunstanciada.</p>
+    
+        </div>
+    
+        <br><br>
+
+        <div class="datosSolicitante">
+            <table class="datos1">
+                <tr>
+                    <td class="datoSolicitado" colspan="2">PROCESO JUDICIAL</td>
+                    <td class="datoSolicitado" colspan="2">Fecha de inicio del proceso judicial</td>
+                    <td colspan="2"><input type="text" name="fecha" class="datoTabla" id="fechaInicio"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado">Competencia</td>
+                    <td>
+                        <input type="radio" name="compe" id="compFederal">Federal
+                        <input type="radio" name="compe" id="comLocal">Local
+                    </td>
+                    <td class="datoSolicitado">Entidad federativa</td>
+                     <td colspan="3"><input type="text" name="enti" class="datoTabla" id="entidadProceso"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado">Delito</td>
+                    <td colspan="5"><input type="text" name="delit" class="datoTabla" id="delitoProceso"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado">Número de juzgado</td>
+                    <td colspan="2"><input type="text" name="numjus" class="datoTabla" id="numJusgado"></td>
+    
+                    <td class="datoSolicitado">Número de proceso</td>
+                    <td colspan="2"><input type="text" name="numpro" class="datoTabla" id="numProceso"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado" colspan="2">Estado del proceso judicial</td>
+                    <td colspan="4"><input type="text" name="estpro" class="datoTabla" id="edoProceso"></td>
+                </tr>
+    
+                <tr>
+                    <td class="datoSolicitado" colspan="6">Procedimiento ante organizmos nacionales e internacionales de derechos humanos</td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado" colspan="3">¿Presentó queja, petición u otro tipo de solicitud ante organismo de DD. HH.?</td>
+                    <td>
+                        <div class="divInputs">
+                            <input type="radio" name="presento" id="quejaSi">si
+                            <input type="radio" name="presento" id="quejaNo">no
+                        </div>
+                    </td>
+                    <td colspan="2"><input type="date" name="fecha" class="datoTabla"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado" >Competencia</td>
+                    <td colspan="2">
+                        <div class="divInputs">
+                            <input type="radio" name="compe" id="compFederal">Federal
+                            <input type="radio" name="compe" id="compLocal">Local
+                            <input type="radio" name="compe" id="comInternacional">internacional
+                        </div>
+                    </td>
+                    <td class="datoSolicitado">Organismo</td>
+                     <td colspan="2"><input type="text" name="orga" class="datoTabla" id="Organismo"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado" colspan="2">Violación a DD. HH.</td>
+                    <td colspan="4"><input type="text" name="DDHH" class="datoTabla" id="ddhh"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado" colspan="2">Autoridad responsable</td>
+                    <td colspan="4"><input type="text" name="aures" class="datoTabla" id="autResponsable"></td>
+                </tr>
+                <tr>
+                    <td>Tipo de solucion</td>
+                    <td colspan="3">
+                        <div class="divInputs">
+                            Recomendación
+                            <input type="radio" name="tipsol" id="tipRecomendacion">
+                            Conciliación
+                            <input type="radio" name="tipsol" id="tipConciliacion">
+                            Medidas precautorias
+                            <input type="radio" name="tipsol" id="tipMedidas">
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <div class="divInput">
+                            <input type="radio" name="tipsol" id="tipOtra">Otra
+                            <br>
+                            <input type="text" name="tipsol" class="datoTabla" id="tipOtra">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado">Folio</td>
+                    <td colspan="2"><input type="text" name="folio" class="datoTabla" id="folio"></td>
+                    <td class="datoSolicitado">Estado Actual</td>
+                    <td colspan="2"><input type="text" name="eactual" class="datoTabla" id="edoActual"></td>
+                </tr>
+                <tr>
+                    <td class="datoSolicitado" colspan="2">OTRA AUTORIDAD </td>
+                    <td colspan="4"><input type="text" name="oauto" class="datoTabla" id="otraAutoridad"></td>
+                </tr>
+            </table>
+          </div>
+        </form>
+        </div>
+    </div>
+
+    <div class="divBoton">
+        <table class="tabSig">
+            <tr>
+                <td>
+                    <form action="p3_VI.html">
+                         <button class="botones">Anterior</button>
+                    </form>
+                 </td>
+                <td>
+                <form action="../FUD/P4_AP.html">
+                     <button class="botones">Siguiente</button>
+                 </form>
+                </td>
+            </tr>
+    </table>
+    </div>
+
+    <div class="footer">
+        <table class="tableFooter">
+            <tr>
+                <td>
+                    <img src="../imagenes/gobiernoMexico.png">
+                </td>
+                <td>
+                    <img src="../imagenes/ceav.png">
+                </td>
+                <td>
+                    <img src="../imagenes/cofemer.png">
+                </td>
+            
+                <td>
+                    Contacto: <br>
+                    Angel Urraza N° 1137 <br>
+                    Col. Del Valle, Benito Juárez, Ciudad de México, C.P. 03100. <br>
+                    Tels. (55) 1000-2000 y 018000-842-8462
+                </td>
+            </tr>
+        </table>
+      </div>
+
+    
+</body>
+</html>

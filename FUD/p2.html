@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUD</title>
+    <link rel="stylesheet" href="../FUD/estilos/p2.css">
+</head>
+<body>
+    <header>
+        <div class="gob">
+            gob.mx
+        </div>
+        <div class="FUD">
+            Comisión ejecutiva de atención a víctimas <br>
+            Formato Único de Declaración
+        </div>
+        <p>
+        El presente Formato Único de Declaración es el medio para tramitar el ingreso de las personas en situación de víctima al Registro Nacional de Víctimas. La información contenida en el presente FUD incluye datos personales sensibles por lo que éstos serán tratados como confidenciales de conformidad con lo dispuesto en la normatividad aplicable. La tramitación del FUD es totalmente gratuita.
+        </p>    
+    </header>
+
+    <div class="title">
+        III. Relacion de la victima indirecta con la victima directa.
+    </div>
+
+    <form action="POST">
+        <div class="box">
+            <table style="width:90%"">
+                <tr>
+                    <th>
+                      En caso de ser víctima indirecta, proporcione nombre completo de la víctima directa
+                    </th>
+                    <th>Relación con la víctima directa.
+                    Conteste: ¿Qué soy de la víctima directa?
+                    </th>
+                </tr>
+            
+                <tr>
+                    <td>
+                        1)<input type="text" id="primNombre">
+                    </td>
+                    <td>
+                        <input type="text" id="relPrimNombre">
+                    </td>
+                </tr>
+                <tr>
+                     <td>
+                        2)<input type="text" id="segNombre">
+                    </td>
+                    <td>
+                        <input type="text" id="relSegNombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3)<input type="text" id="terNombre">
+                    </td>
+                    <td>
+                        <input type="text" id="relTerNombre">
+                    </td>
+                </tr>
+            
+            </table>
+        </div>
+
+        <div class="title">
+            IV. IDENTIFICACIÓN DE LA VÍCTIMA.
+        </div>
+
+        <div class="box">
+            <table class="tablaDocumentos">
+                <tr>
+                    <td colspan="3">
+                        Se deberá anexar al presente Formato, copia de la identificación de la víctima. En caso de manifestar no contar con ella en este momento, la identificación deberá ser remitida a la Comisión Ejecutiva de Atención a Víctimas con posterioridad.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">    
+                        ¿Presenta identificación?
+                        SI.<input type="radio" name="cuartoIdeVictima" id="identificacionSi">
+                        NO.<input type="radio" name="cuartoIdeVictima" id="identificacionNo">
+                    </td>
+                </tr>
+                <tr>
+                  <td><input type="radio" name="documentoPresentado" id="cartillaMil">Cartilla del servicio militar</td>
+                  <td><input type="radio" name="documentoPresentado" id="credIMSS">Credencial oficial expedida por el IMSS o ISSSTE </td>
+                  <td><input type="radio" name="documentoPresentado" id="tarjeTemporal">Tarjeta de residencia temporal </td>
+                </tr>
+          
+                <tr>
+                  <td><input type="radio" name="documentoPresentado" id="pasaporte">Pasaporte</td>
+                  <td><input type="radio" name="documentoPresentado" id="certificado">Certificado o constancia de estudios </td>
+                  <td><input type="radio" name="documentoPresentado" id="tarjetaPermanente">Tarjeta de residencia permanente </td>
+                </tr>
+          
+                <tr>
+                  <td><input type="radio" name="documentoPresentado" id="cedula">Cédula profesional </td>
+                  <td><input type="radio" name="documentoPresentado" id="constanciaResidencia">Constancia de residencia expedida por autoridad local </td>
+                  <td><input type="radio" name="documentoPresentado" id="credencialElector">Credencial de elector </td>
+                </tr>
+                <tr>
+                  <td>Otro documento oficial <input type="radio" name="documentoPresentado" id="otro"></td>
+                  <td colspan="2">Indique cual: <input type="text" name="documentoPresentado" class="inputDocumento" id="otroDocumento"></td >
+                </tr>
+          
+                <tr>
+                  <td>Número del documento probatorio:</td>
+                  <td colspan="2"><input type="text" name="textNumeroDocumentoProbarotorio" class="inputDocumento" id="noDocProbatorio"></td>
+                </tr>
+              </table>
+        </div>
+
+        <div class="title">
+            V. LUGAR Y FECHA DE LOS HECHOS
+        </div>
+
+        <div class="box">
+            <div class="style">  
+            Calle:
+                <input type="text" name="textCalle" id="calleHechos">
+                Numero exterior:
+                <input type="text" name="textNumeroExterior" id="noExteriorHechos">
+                Número interior:
+                <input type="text" name="textNumeroInterior" id="noInteriorHechos">
+                Código postal
+                <input type="text" name="textCodigoPostal" id="CPHechos">
+                Colonia
+                <input type="text" name="textColonia" id="coloniaHechos">
+                Localidad
+                <input type="text" name="textLocalidad" id="localidadHechos">
+                Delegación o municipio
+                <input type="text" name="textDelegacionMunicipio" id="delegacionHechos">
+                Entidad federativa
+                <input type="text" name="textEntidadFederativa" id="entidadHechos">
+                Fecha
+                <input type="datetime-local" name="dateFecha" id="fechaHechos">
+                En caso de no conocer todos los datos sobre el lugar donde ocurrieron los hechos victimizantes, favor de proporcionar los que conozca y utilice esta casilla para agregar otros datos de ubicación:
+                <input type="text" name="textEnCasoDeConocer..." id="textoHechos">
+            </div>
+          
+        </div>
+
+        <div class="title">
+            RELATO DE LOS HECHOS
+        </div>
+        
+        <div class="box">
+            <div class="style">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <p>Por favor relate las circunstancias de modo, tiempo y lugar, antes, durante y después de los hechos victimizantes. En caso de contar con alguna constancia o documento ministerial, jurisdiccional o de organismos nacionales o internacionales de derechos humanos en donde se dé cuenta del mismo, anexarlo al presente formato. En caso de que los hechos victimizantes atenten contra derechos colectivos, favor de referirlo.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="textRelatoDeLosHechos" class="divHechos" id="relatoHechos">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>NOTA: En caso de requerir más espacio para relatar los hechos delictivos o la violación a derechos humanos, por favor utilice el formato (“INFORMACIÓN COMPLEMENTARIA”)
+                            </p>
+                        </td>
+                        <td>
+                            <p>También puede acudir a las delegaciones de la CEAV, establecidas a lo largo del territorio nacional.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>   
+        </div>
+    </form>
+
+    <div class="divBoton">
+    <table class="tabSig">
+        <tr>
+            <td>
+            <a href="javascript: history.back()">       
+                        <button class="botones">Anterior </button>
+            </a>
+            </td>
+            <td>
+            <form action="p3.html">
+                <button class="botones">Siguiente</button>
+            </form>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="footer">
+        <table class="tableFooter">
+            <tr>
+                <td>
+                    <img src="../imagenes/gobiernoMexico.png">
+                </td>
+                <td>
+                    <img src="../imagenes/ceav.png">
+                </td>
+                <td>
+                    <img src="../imagenes/cofemer.png">
+                </td>
+            
+                <td>
+                    Contacto: <br>
+                    Angel Urraza N° 1137 <br>
+                    Col. Del Valle, Benito Juárez, Ciudad de México, C.P. 03100. <br>
+                    Tels. (55) 1000-2000 y 018000-842-8462
+                </td>
+            </tr>
+        </table>
+      </div>
+</body>
+</html>
